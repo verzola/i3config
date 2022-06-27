@@ -172,7 +172,7 @@ bindsym $mod+r mode "resize"
 bar {
   status_command i3status
   position top
-  font pango:FantasqueSansMono Nerd Font 12
+  font pango:FantasqueSansMono Nerd Font 13
   separator_symbol " "
   #mode hide
   #output primary
