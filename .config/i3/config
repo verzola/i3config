@@ -167,36 +167,20 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-#bar {
-  #status_command i3status
-  #position top
-  #font pango:FantasqueSansMono Nerd Font 13
-  #separator_symbol " "
-  #mode hide
-  #output primary
-  # colors {
-  #   background #282A36
-  #   statusline #282A36
-  #   separator  #f8f8f2
-
-  #   focused_workspace  #44475A #44475A #F8F8F2
-  #   active_workspace   #282A36 #44475A #F8F8F2
-  #   inactive_workspace #282A36 #282A36 #BFBFBF
-  #   urgent_workspace   #FF5555 #FF5555 #F8F8F2
-  #   binding_mode       #FF5555 #FF5555 #F8F8F2
-  # }
-#}
-
 # class                 border  bground text    indicator child_border
-client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
-client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
-client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
-client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
-client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+#client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+#client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+#client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+#client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+#client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 
-client.background       #F8F8F2
+client.focused          #111111 #111111 #FFFFFF #FF0000   #000000
+client.focused_inactive #000000 #000000 #FFFFFF #00FF00   #00FF00
+client.unfocused        #000000 #000000 #FFFFFF #000000   #000000
+client.urgent           #FFFF00 #FFFF00 #000000 #FFFF00   #FFFF00
+client.placeholder      #FF0000 #FF0000 #FF0000 #FF0000   #FF0000
+
+client.background       #00000
 
 bindsym $mod+d exec --no-startup-id rofi -show drun
 
