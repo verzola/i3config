@@ -98,9 +98,9 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:Foo"
-set $ws2 "2:Bar"
-set $ws3 "3:Baz"
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
@@ -174,8 +174,8 @@ bindsym $mod+r mode "resize"
 #client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
 #client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 
-client.focused          #111111 #111111 #FFFFFF #000000   #000000
-client.focused_inactive #000000 #000000 #FFFFFF #00FF00   #00FF00
+client.focused          #000000 #000000 #FFFFFF #000000   #000000
+client.focused_inactive #111111 #111111 #FFFFFF #00FF00   #00FF00
 client.unfocused        #000000 #000000 #FFFFFF #000000   #000000
 client.urgent           #FFFF00 #FFFF00 #000000 #FFFF00   #FFFF00
 client.placeholder      #000000 #000000 #000000 #000000   #000000
