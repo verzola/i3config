@@ -1,8 +1,8 @@
 * {
   font: "FantasqueSansMono NF 16";
   foreground: #ffffff;
-  background-color: #000000;
-  active-background: #111111;
+  background-color: #111111;
+  active-background: #222222;
   urgent-background: #ff5555;
   selected-background: @active-background;
   selected-urgent-background: @urgent-background;
@@ -14,7 +14,8 @@
 #window {
   background-color: @background-color;
   border:           1;
-  border-radius: 20;
+  border-radius: 20px;
+  width: 800px;
   border-color: @bordercolor;
   padding:          30;
 }
