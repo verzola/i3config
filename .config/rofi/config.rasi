@@ -1,3 +1,11 @@
+configuration {
+  display-drun: "Application: ";
+  display-window: "Windows: ";
+  modi: "window,run,drun";
+  show-icons: true;
+  icon-theme:"Yaru";
+}
+
 * {
   font: "FantasqueSansMono NF 16";
   foreground: #ffffff;
@@ -14,7 +22,7 @@
 #window {
   background-color: @background-color;
   border:           1;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 800px;
   border-color: @bordercolor;
   padding:          30;
@@ -46,7 +54,7 @@
 
 #element {
   border:  0;
-  padding: 1px ;
+  padding: 1px;
 }
 
 #element.normal.normal {
