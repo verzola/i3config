@@ -182,14 +182,22 @@ client.placeholder      #000000 #000000 #000000 #000000   #000000
 
 client.background       #00000
 
-default_border none
-default_floating_border 1pixel
-hide_edge_borders both
+#default_border none
+#default_floating_border 1pixel
+#hide_edge_borders both
 #for_window [class="^.*"] border pixel 0
 
+# Rofi
 bindsym $mod+d exec --no-startup-id rofi -show drun
 
+# Nitogen
 exec --no-startup-id nitrogen --restore
+
+# Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# Compton
 exec compton &
+
+# Dunst
 exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
