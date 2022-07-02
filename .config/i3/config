@@ -192,3 +192,4 @@ bindsym $mod+d exec --no-startup-id rofi -show drun
 exec --no-startup-id nitrogen --restore
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec compton &
+exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
