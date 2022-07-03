@@ -184,8 +184,9 @@ client.background       #00000
 
 #default_border none
 #default_floating_border 1pixel
-#hide_edge_borders both
-#for_window [class="^.*"] border pixel 0
+hide_edge_borders smart
+#for_window [class="^.*"] border pixel 1
+#bar {}
 
 # Rofi
 bindsym $mod+d exec --no-startup-id rofi -show drun
