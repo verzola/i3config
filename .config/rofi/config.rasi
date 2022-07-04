@@ -1,16 +1,19 @@
 configuration {
-  display-drun: "Application: ";
-  display-window: "Windows: ";
+  display-run: " ";
+  display-drun: " ";
+  display-window: " ";
   modi: "window,run,drun";
   show-icons: true;
   icon-theme:"Yaru";
+  font: "FantasqueSansMono NF 24";
+  sidebar-mode: true;
+  matching: "fuzzy";
 }
 
 * {
-  font: "FantasqueSansMono NF 16";
-  foreground: #ffffff;
-  background-color: #111111;
-  active-background: #222222;
+  foreground: #ffffffdd;
+  background-color: #00000055;
+  active-background: #000000;
   urgent-background: #ff5555;
   selected-background: @active-background;
   selected-urgent-background: @urgent-background;
@@ -21,11 +24,9 @@ configuration {
 
 #window {
   background-color: @background-color;
-  border:           1;
-  border-radius: 10px;
-  width: 800px;
+  border:           0;
+  border-radius: 0;
   border-color: @bordercolor;
-  padding:          30;
 }
 
 #mainbox {
@@ -34,9 +35,9 @@ configuration {
 }
 
 #message {
-  border:       1px dash 0px 0px ;
+  border:       1px dash 0px 0px;
   border-color: @separatorcolor;
-  padding:      1px ;
+  padding:      0px;
 }
 
 #textbox {
@@ -45,16 +46,16 @@ configuration {
 
 #listview {
   fixed-height: 0;
-  border:       2px dash 0px 0px ;
+  border:       0px dash 0px 0px;
   border-color: @bordercolor;
-  spacing:      2px ;
+  spacing:      2px;
   scrollbar:    false;
-  padding:      2px 0px 0px ;
+  padding:      2px 0px 0px;
 }
 
 #element {
   border:  0;
-  padding: 1px;
+  padding: 10px;
 }
 
 #element.normal.normal {
@@ -109,9 +110,18 @@ configuration {
   padding:      0;
 }
 
+#mode-switcher {
+  border-color: @foreground;
+  margin: 0;
+}
+
 #sidebar {
-  border:       2px dash 0px 0px ;
+  border:       0px dash 0px 0px;
   border-color: @separatorcolor;
+}
+
+#button {
+  padding: 10px;
 }
 
 #button.selected {
@@ -122,7 +132,7 @@ configuration {
 #inputbar {
   spacing:    0;
   text-color: @foreground;
-  padding:    1px;
+  padding:    10px;
 }
 
 #case-indicator {
@@ -133,6 +143,7 @@ configuration {
 #entry {
   spacing:    0;
   text-color: @foreground;
+  placeholder: "";
 }
 
 #prompt {
