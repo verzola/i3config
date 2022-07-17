@@ -109,6 +109,8 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
+assign [class="Brave"] $ws2
+
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
@@ -182,10 +184,12 @@ client.placeholder      #000000 #000000 #000000 #000000   #000000
 
 client.background       #00000
 
-#default_border none
-#default_floating_border 1pixel
+default_border pixel 1
+default_floating_border pixel 1
 hide_edge_borders smart
 #for_window [class="^.*"] border pixel 1
+
+# Default bar configurtion
 #bar {}
 
 # Rofi
@@ -202,3 +206,5 @@ exec compton &
 
 # Dunst
 exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
+
+#exec --no-startup-id brave-browser &
