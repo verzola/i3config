@@ -4,8 +4,7 @@ configuration {
   display-window: " ";
   modi: "window,run,drun";
   show-icons: true;
-  icon-theme:"Yaru";
-  font: "FantasqueSansMono NF 24";
+  font: "FantasqueSansMono NF 18";
   sidebar-mode: true;
   matching: "fuzzy";
 }
@@ -24,9 +23,9 @@ configuration {
 
 #window {
   background-color: @background-color;
-  border:           0;
+  border:        0;
+  padding:       0;
   border-radius: 0;
-  border-color: @bordercolor;
 }
 
 #mainbox {
@@ -48,9 +47,9 @@ configuration {
   fixed-height: 0;
   border:       0px dash 0px 0px;
   border-color: @bordercolor;
-  spacing:      2px;
+  spacing:      0px;
   scrollbar:    false;
-  padding:      2px 0px 0px;
+  padding:      0px;
 }
 
 #element {
