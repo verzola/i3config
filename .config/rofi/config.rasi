@@ -54,7 +54,7 @@ configuration {
 
 #element {
   border:  0;
-  padding: 10px;
+  padding: 5px;
 }
 
 #element.normal.normal {
