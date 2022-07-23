@@ -5,6 +5,7 @@ rm ~/.config/polybar/launch.sh
 rm ~/.config/rofi/config.rasi
 rm ~/.config/picom/picom.conf
 rm ~/.config/dunst/dunstrc
+rm ~/.config/.alacritty.yml
 
 mkdir -p ~/.config/i3/
 mkdir -p ~/.config/polybar/
@@ -19,3 +20,4 @@ ln -s ~/i3config/.config/polybar/launch.sh ~/.config/polybar/launch.sh
 ln -s ~/i3config/.config/rofi/config.rasi ~/.config/rofi/config.rasi
 ln -s ~/i3config/.config/picom/picom.conf ~/.config/picom/picom.conf
 ln -s ~/i3config/.config/dunst/dunstrc ~/.config/dunst/dunstrc
+ln -s ~/i3config/.config/.alacritty.yml ~/.config/.alacritty.yml
