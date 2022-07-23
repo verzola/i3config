@@ -169,6 +169,17 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Screenshots
+bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
+bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date)"
+bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(date)"
+
+## Clipboard Screenshots
+bindsym Ctrl+Print exec --no-startup-id maim | xclip -selection clipboard -t image/png
+bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
+
+
 # class                 border  bground text    indicator child_border
 #client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
 #client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
@@ -177,7 +188,7 @@ bindsym $mod+r mode "resize"
 #client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 
 client.focused          #000000 #000000 #FFFFFF #000000   #000000
-client.focused_inactive #111111 #111111 #FFFFFF #00FF00   #00FF00
+client.focused_inactive #111111 #111111 #FFFFFF #000000   #000000
 client.unfocused        #000000 #000000 #FFFFFF #000000   #000000
 client.urgent           #FFFF00 #FFFF00 #000000 #FFFF00   #FFFF00
 client.placeholder      #000000 #000000 #000000 #000000   #000000
@@ -201,8 +212,8 @@ exec --no-startup-id nitrogen --restore
 # Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-# Compton
-exec_always --no-startup-id picom -b --experimental-backends --config ~/.config/compton.conf
+# Picom
+exec_always --no-startup-id picom -b --experimental-backends
 
 # Dunst
 exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
@@ -210,5 +221,5 @@ exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
 #exec --no-startup-id brave-browser &
 
 # Gaps
-gaps inner 10
-gaps outer 5
+gaps inner 5
+gaps outer 2
